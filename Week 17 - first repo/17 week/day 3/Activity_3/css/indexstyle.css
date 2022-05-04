@@ -1,0 +1,8 @@
+  nav {
+    height: 50px;
+    background-color: #004D79;
+  }
+  .inline-block {
+    padding: 15px;
+    display: inline-block;
+  }

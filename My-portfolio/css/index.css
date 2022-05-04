@@ -32,7 +32,7 @@ h2#topHeadline {
 }
 .firstProjectImg {
   float: right;
-  height: 340px;
+  height: 380px;
   width: auto;
   padding-right: 1rem;
   padding-left: 1rem;
@@ -43,52 +43,134 @@ h1#titlepage {
   padding-top: 12px;
 }
 .section1 {
-  background-color: #004d794c;
+  background-color: #DCE6EC;
   height: 350px;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  padding-top: 20px;
+  padding-left: 10rem;
+  padding-right: 5rem;
+  padding-top: 0px;
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
 .section1 p {
 position: flex;
-width: 567px;
+width: 500px;
 height: 101px;
 padding-right: 10%;
 }
+.section1 h1 {
+  padding-top: 50px;
+}
 .section2 {
-  background-color: #00790025;
+  background-color: #E0ECEA;
   height: 350px;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  padding-top: 20px;
+  padding-left: 10rem;
+  padding-right: 5rem;
+  padding-top: 0px;
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
+.section2 h1 {
+  padding-top: 50px;
+}
 .section2 p {
 position: flex; 
+width: 1100px;
 height: 101px;
-  left: 93px;
+padding-left: 10px;
 }
 .secondProjectImg {
   float: left;
-  height: 340px;
+  height: 380px;
   width: auto;
   padding-right: 10%;
 }
 .section3 {
-  background-color: #004d7938;
+  background-color: #DDE7EE;
   height: 350px;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  padding-top: 20px;
+  padding-left: 10rem;
+  padding-right: 5rem;
+  padding-top: 0px;
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
+.section3 h1{
+  padding-top: 50px;
+}
 .section3 p {
-  position: flex;
-  width: 567px;
+position: flex;
+width: 500px;
 height: 101px;
-padding-right: 60%;
+padding-right: 10%;
+}
+.thirdProjectImg {
+  float: right;
+  height: 380px;
+  width: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+/* Style inputs */
+input[type=text], select {
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+label[for=message] {
+  padding-right: 15px;
+}
+label[for=fname] {
+  padding-right: 32px;
+}
+label[for=email] {
+  padding-left: 10px;
+  padding-right: 22px;
+}
+input[type=text1], select { 
+  width: 57.5%;
+  height: 180px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+/* Style the submit button */
+input[type=submit] {
+  width: 169px;
+  background-color: #001926;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 49%;
+}
+/* Add a background color to the submit button on mouse-over */
+input[type=submit]:hover {
+  background-color: #004D79;
+}
+.upfooter {
+  background-color: #F5F8FA;
+  margin-bottom: 0;
+}
+.Upcontent h1 {
+  padding-left: 25%;
+}
+.Upcontent {
+  padding-left:25%;
+}
+.vector {
+  width: 100%;
+}
+.footer {
+  background-color: #004D79;
+  height: 150px;
+  z-index: -20px;
+  
 }
