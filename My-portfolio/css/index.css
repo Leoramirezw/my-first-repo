@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+font-family: 'Abadi MT Std', sans-serif;
+}
+@import url('http://fonts.cdnfonts.com/css/abadi-mt-std');
 body {background-color: #fdfdfd
 }
   nav {
@@ -5,13 +10,15 @@ body {background-color: #fdfdfd
     background-color: #004D79;
   }
   .inline-block {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 500;
     margin: 23px;
     display: inline-block;
     color: white;
     font-size: 24px;
   }
   .heroImage {
-    height: 655px;
+    max-height: 655px;
   }
   #mainContent {
     background-color: #004D79;
@@ -27,17 +34,17 @@ h1#topHeadline {
   color: white;
 }
 h2#topHeadline {
+  font-family: 'Montserrat', sans-serif;
   font-size: 42px;
   color: white;
 }
 .firstProjectImg {
   float: right;
-  height: 380px;
+  height: 360px;
   width: auto;
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
-h1#titlepage {
+  padding-right: 1rem;}
+
+h3#titlepage {
   text-align: center;
   padding-bottom: 24px;
   padding-top: 12px;
@@ -46,57 +53,66 @@ h1#titlepage {
   background-color: #DCE6EC;
   height: 350px;
   padding-left: 10rem;
-  padding-right: 5rem;
+  padding-right: 3rem;
   padding-top: 0px;
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
 .section1 p {
+  font-family: 'montserrat';
+  font-weight: 400;
+  font-size: 18px;
 position: flex;
 width: 500px;
 height: 101px;
 padding-right: 10%;
 }
-.section1 h1 {
+.section1 h3 {
   padding-top: 50px;
 }
 .section2 {
   background-color: #E0ECEA;
   height: 350px;
-  padding-left: 10rem;
+  padding-left: 6rem;
   padding-right: 5rem;
   padding-top: 0px;
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
-.section2 h1 {
+.section2 h3 {
   padding-top: 50px;
 }
 .section2 p {
-position: flex; 
-width: 1100px;
-height: 101px;
-padding-left: 10px;
+  font-family: 'montserrat';
+  font-weight: 400;
+  font-size: 18px;
+  position: flex;
+  width: auto;
+  height: 101px;
+  padding-right: 5rem;
 }
 .secondProjectImg {
   float: left;
-  height: 380px;
+  height: 350px;
   width: auto;
-  padding-right: 10%;
+  padding-right: 20px;
 }
 .section3 {
   background-color: #DDE7EE;
   height: 350px;
   padding-left: 10rem;
-  padding-right: 5rem;
+  padding-right: 3rem;
   padding-top: 0px;
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
-.section3 h1{
+.section3 h3{
   padding-top: 50px;
 }
 .section3 p {
+  font-family: 'montserrat';
+  font-weight: 400;
+  font-size: 18px;
 position: flex;
 width: 500px;
 height: 101px;
@@ -108,6 +124,20 @@ padding-right: 10%;
   width: auto;
   padding-right: 1rem;
   padding-left: 1rem;
+}
+input[type=button] {
+  width: 169px;
+  background-color: #001926;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+/* Add a background color to the submit button on mouse-over */
+input[type=button]:hover {
+  background-color: #004D79;
 }
 /* Style inputs */
 input[type=text], select {
@@ -147,7 +177,7 @@ input[type=submit] {
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
   margin-left: 49%;
 }
@@ -159,18 +189,129 @@ input[type=submit]:hover {
   background-color: #F5F8FA;
   margin-bottom: 0;
 }
-.Upcontent h1 {
-  padding-left: 25%;
+.Upcontent h2 {
+  padding-left: 15%;
 }
 .Upcontent {
   padding-left:25%;
 }
 .vector {
+  margin-bottom: -5px;
   width: 100%;
 }
 .footer {
   background-color: #004D79;
   height: 150px;
   z-index: -20px;
-  
+  text-align: center;
+}
+.fa {
+  padding: 20px;
+  font-size: 50px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-right: 1em;
+}
+.fa-behance {
+ margin-top: 45px;
+  background: #053eff;
+  color: white;
+  cursor: pointer;
+}
+.fa-linkedin {
+  background: #0E76A8;
+  color: white;
+  cursor: pointer;
+}
+.footer p {
+  color: white;
+}
+/* New project grid */
+#categoryGrid {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 380px 380px 380px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "bookcases bookcases bookcases"
+  "bedroom bedroom bedroom"
+  "couches couches couches";
+}
+#oneProject {
+  grid-area: bookcases;
+  background-image: url("../images/Go-mobile-app.png");
+
+}
+#twoProject {
+  grid-area: bedroom;
+  background-image: url("../images/HamiCanada\ Mockup-1.png");
+}
+
+#threeProject {
+  grid-area: couches;
+  background-image: url("../images/Canada-council-for-the-arts.png");
+}
+
+.categoryGridArea1 {
+  background-color: #DCE6EC;
+  background-position: 80%;
+  background-size: 460px;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content:flex-start
+}
+.categoryGridArea2 {
+  background-color: #DCE6EC;
+  background-position: 80%;
+  background-size: 460px;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content:flex-start
+}
+.categoryGridArea3 {
+  background-color: #DCE6EC;
+  background-position: 80%;
+  background-size: 480px;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content:flex-start
+}
+.heading {
+  text-align: start;
+  padding-right: 10rem;
+  padding-left: 10rem;
+  padding-top: 50px;
+  color: black;
+  font-size: 18px;
+}
+.heading p {
+  position: flex;
+  text-align: start;
+  padding-left: 0;
+  padding-top: 0px;
+  color: black;
+  max-width: 400px;
+height: 101px;
+  font-size: 18px;
+}
+h1 {
+  font-family: 'montserrat', sans-serif;
+  font-weight: 500;
+}
+h2 {
+  font-family: 'abadi MT condensed' sans-serif;
+  font-weight: medium;
+  font-size: 40px;
+}
+h3 { font-family:'abadi MT condensed' sans-serif;
+  font-weight: medium;
+  font-size: 32px;
 }
