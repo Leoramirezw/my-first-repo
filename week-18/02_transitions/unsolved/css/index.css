@@ -17,13 +17,18 @@
   background-color: red;
   color: white;
   width: 150px;
+  padding: 20px;
   text-align: center;
   height: 50px;
+  transition: all 3s ease;
   /* Add the css property transition here! */
 
 }
 /* active state */
 .hoverMe:hover {
+  background-color:linear-gradient(270deg, #ffdea9, #647a93);;
+
+  
   /* Add your hover state css here. */
 
 }
