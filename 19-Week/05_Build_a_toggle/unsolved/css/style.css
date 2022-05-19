@@ -1,0 +1,28 @@
+/* Style your dropdown below! */
+.container{
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 500px;
+}
+#toggle{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    font-weight: 500;
+}
+#toggle img{
+    width: 1em;
+    height: auto;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+ul li{
+    border: 1px solid black;
+}
